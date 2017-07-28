@@ -1,0 +1,5 @@
+### Insert Kibana's config to ElasticSearch
+
+curl -vX POST "http://localhost:9200/.kibana/config/5.5.0" --data-binary @/usr/local/bin/kibana-default-index.json --header "Content-Type: application/json"
+curl -vX POST "http://localhost:9200/.kibana/index-pattern/*" --data-binary @/usr/local/bin/kibana-default-index-pattern.json --header "Content-Type: application/json"
+
